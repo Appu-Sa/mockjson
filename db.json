@@ -1,0 +1,196 @@
+{
+    "usermessages" : {
+        "messages": {
+            "msg1": {
+                "userId": "user1",
+                "content": "Hi everyone!",
+                "deleted": false,
+                "reply": null
+            },
+            "msg2": {
+                "userId": "user2",
+                "content": "Hello, Alice! How are you?",
+                "deleted": false,
+                "reply": {
+                    "adminId": "admin1",
+                    "content": "I'm doing well, thank you!"
+                }
+            },
+            "msg3": {
+                "userId": "user3",
+                "content": "Good afternoon, everyone!",
+                "deleted": false,
+                "reply": null
+            }
+        },
+        "users": {
+            "user1": {
+                "name": "Alice",
+                "topFan": false,
+                "deleted": false
+            },
+            "user2": {
+                "name": "Bob",
+                "topFan": true,
+                "deleted": false
+            },
+            "user3": {
+                "name": "Charlie",
+                "topFan": false,
+                "deleted": true
+            },
+            "admin1": {
+                "name": "Admin",
+                "topFan": false,
+                "deleted": false
+            }
+        },
+        "userMessages": {
+            "user1": ["msg1"],
+            "user2": ["msg2"],
+            "user3": ["msg3"]
+        }
+    },
+
+    "polls": {
+        "poll1": {
+            "question": "What's your favorite color?",
+            "options": [
+                {
+                    "option": "Red",
+                    "count": 1
+                },
+                {
+                    "option": "Blue",
+                    "count": 1
+                },
+                {
+                    "option": "Green",
+                    "count": 1
+                },
+                {
+                    "option": "Yellow",
+                    "count": 0
+                }
+            ],
+            "createdAt": "2024-10-01",
+            "expiresAt": "2024-10-15"
+        },
+        "poll2": {
+            "question": "How do you prefer to communicate?",
+            "options": [
+                {
+                    "option": "Text",
+                    "count": 0
+                },
+                {
+                    "option": "Voice",
+                    "count": 0
+                },
+                {
+                    "option": "Video",
+                    "count": 0
+                },
+                {
+                    "option": "In-person",
+                    "count": 0
+                }
+            ],
+            "createdAt": "2024-10-02",
+            "expiresAt": "2024-10-16"
+        },
+        "poll3": {
+            "question": "What is your favorite season?",
+            "options": [
+                {
+                    "option": "Spring",
+                    "count": 0
+                },
+                {
+                    "option": "Summer",
+                    "count": 0
+                },
+                {
+                    "option": "Autumn",
+                    "count": 0
+                },
+                {
+                    "option": "Winter",
+                    "count": 0
+                }
+            ],
+            "createdAt": "2024-10-03",
+            "expiresAt": "2024-10-10"
+        }
+    },
+    "offers": {
+        "offer1": {
+            "id": "offer_001",
+            "description": "10% off on your next purchase",
+            "discount": 10,
+            "redirect_url": "https://www.google.com",
+            "validFrom": "2024-10-01",
+            "validTo": "2024-10-31",
+            "conditions": "Applicable on purchases over $50",
+            "image_url": "https://www.example.com/offer1.jpg",
+            "category": "Discount",
+            "status": "active",
+            "engagement": {
+                "views": 1200,
+                "clicks": 300,
+                "conversions": 50
+            }
+        },
+        "offer2": {
+            "id": "offer_002",
+            "description": "Free shipping on orders over $50",
+            "discount": 0,
+            "redirect_url": "https://www.google.com",
+            "validFrom": "2024-10-01",
+            "validTo": "2024-12-31",
+            "conditions": "Minimum purchase of $50 required",
+            "image_url": "https://www.example.com/offer2.jpg",
+            "category": "Shipping",
+            "status": "active",
+            "engagement": {
+                "views": 800,
+                "clicks": 150,
+                "conversions": 30
+            }
+        },
+        "offer3": {
+            "id": "offer_003",
+            "description": "Buy one get one free on select items",
+            "discount": 50,
+            "redirect_url": "https://www.google.com",
+            "validFrom": "2024-10-15",
+            "validTo": "2024-10-30",
+            "conditions": "Valid on select items only",
+            "image_url": "https://www.example.com/offer3.jpg",
+            "category": "Discount",
+            "status": "active",
+            "engagement": {
+                "views": 950,
+                "clicks": 200,
+                "conversions": 40
+            }
+        },
+        "offer4": {
+            "id": "offer_004",
+            "description": "Seasonal Sale: 20% off on all products",
+            "discount": 20,
+            "redirect_url": "https://www.google.com",
+            "validFrom": "2024-11-01",
+            "validTo": "2024-11-30",
+            "conditions": "No minimum purchase required",
+            "image_url": "https://www.example.com/offer4.jpg",
+            "category": "Discount",
+            "status": "upcoming",
+            "engagement": {
+                "views": 0,
+                "clicks": 0,
+                "conversions": 0
+            }
+        }
+    }
+}
